@@ -1,0 +1,20 @@
+oauth-token:
+channel:
+
+# -----      General mod settings      -----
+prefix:
+
+# ----- Channel point redemption settings -----
+redemption_names:
+  whitelist: 'Add to whitelist'
+
+# -----           Chat commands           -----
+ttv_chat:
+  # Change the default prefix "!"
+  prefix: "!"
+  # Add any command under commands to add them, with desired response
+  # See examples for usage.
+  commands:
+    players: "There are {players.online} players online: {players}"
+    examplecommand: "This is an example command response!"
+    examplecommand2: "This is another response."

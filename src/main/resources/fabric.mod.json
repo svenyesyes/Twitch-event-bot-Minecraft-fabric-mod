@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "twitch-event-bot-minecraft-fabric-mod",
+  "version": "${version}",
+  "name": "Twitch-event-bot-Minecraft-fabric-mod",
+  "description": "Template plugin for interacting with Twitch",
+  "authors": [ "Sven" ],
+  "contact": {
+    "email": "sven@sven.lol",
+    "sources": ""
+  },
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "lol.sven.twitchEventBotMinecraftFabricMod.TwitchEventBotMinecraftFabricMod"
+    ]
+  },
+  "mixins": [
+    "twitch-event-bot-minecraft-fabric-mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
