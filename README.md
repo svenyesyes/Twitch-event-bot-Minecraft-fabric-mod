@@ -91,6 +91,12 @@ Handlers live in:
 ```arduino
 lol.sven.twitchEventBotMinecraftFabricMod.twitch.redemptionHandlers
 ```
+Create your own by extending:
+```java
+public abstract class RedemptionHandler {
+    public abstract boolean handleRedemption(ChannelPointsRedemptionEvent event);
+}
+```
 You can make your own interactions:
 - Spawn mobs
 - Give items
